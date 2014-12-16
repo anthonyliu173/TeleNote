@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//src/com/example/telenote/IndividualActivity.java=UTF-8
+encoding//src/com/example/telenote/MainActivity.java=UTF-8
+encoding//src/com/example/telenote/broadcast/PhoneStateMonitor.java=UTF-8
+encoding//src/com/example/telenote/broadcast/PhoneStateReceiver.java=UTF-8
+encoding//src/com/example/telenote/fieldservice/CallService.java=UTF-8

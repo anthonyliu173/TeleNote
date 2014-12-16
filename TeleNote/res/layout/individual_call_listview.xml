@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:descendantFocusability="afterDescendants">
+    
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutIndividualList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/telenotelistviewbackground3"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:minHeight="80dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+            
+            <Button
+                android:id="@+id/btnPlayStop"
+                android:layout_width="30dp"
+                android:layout_height="19dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/telenoteplaystopicon"
+                android:maxHeight="15dp"
+                android:maxWidth="15dp"
+                android:minHeight="10dp"
+                android:minWidth="10dp" />
+
+            <CheckBox
+                android:id="@+id/ckbDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/linearLayout1" >
+
+            <ImageView
+                android:id="@+id/imgCallStatusInd"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/telenoteorangedot" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="Enter here" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="how_to_use_telenote">如何使用來電筆記 ?</string>
+    <string name="instruction1">再也不需要紙跟筆...</string>
+    <string name="instruction2">搖兩下 或按一下</string>
+    <string name="instruction3">就像平常一樣講話</string>
+    <string name="instruction4">再搖兩下，暫停記錄功能</string>
+    <string name="instruction5">語音記錄讓你輕鬆記下重要訊息</string>
+    <string name="enter_here">輸入:</string>
+    <string name="settings">設定</string>
+    <string name="disable_telenote">停止使用 TeleNote</string>
+    <string name="upgrade30"> 30元 (前往付費)</string>
+    <string name="enable_telenote">啟用 TeleNote</string>
+    <string name="number_question">林先生,請問府上地址是 ?</string>
+
+</resources>

@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/telenotemainpagebackground"
+    android:gravity="fill_horizontal"
+    tools:context="${packageName}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#FF4F4F4F"
+        android:minHeight="60dp" >
+
+        <ImageView
+            android:id="@+id/imgMPGfigure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/telenotemainpagelogo" />
+
+        <Button
+            android:id="@+id/btnInstructionSetting"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/telenotemainpagesettingicondisable"
+            android:clickable="false" />
+
+        <Button
+            android:id="@+id/btnInstructionInfo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/btnInstructionSetting"
+            android:background="@drawable/telenotemainpageinfoicondisable"
+            android:clickable="false" />
+
+        <TextView
+            android:id="@+id/txtTeleNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imgMPGfigure"
+            android:text="來電筆記"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:background="@drawable/telenotemainpagemiddlebanner"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btnPreviousPage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/instructionpreviouspagedisable"
+            android:clickable="false"
+            android:enabled="false" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btnNextPage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/instructionnextpage" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtInstructionNumberofPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="1/5"
+        android:textColor="#FF998F75"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/how_to_use_telenote"
+        android:textColor="#FF998F75"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgInstruction"
+        android:layout_width="300dp"
+        android:layout_height="226dp"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/instructionimage1" />
+
+    <TextView
+        android:id="@+id/txtInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtInstructionNumberofPage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:textColor="#FF998F75"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Next time during a call..." />
+
+    <TextView
+        android:id="@+id/txtNumberQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imgInstruction"
+        android:layout_alignTop="@+id/imgInstruction"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:maxWidth="100dp"
+        android:textColor="#FF998F75"
+        android:textStyle="bold" />
+
+</RelativeLayout>

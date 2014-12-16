@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/IndividualCallRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/telenotemainpagebackground"
+    tools:context="${packageName}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#FF4F4F4F"
+        android:minHeight="60dp" >
+
+        <ImageView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/telenotemainpagelogo" />
+
+        <TextView
+            android:id="@+id/txtTeleNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/Title"
+            android:text="來電筆記"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCall"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/telenotemainpagecallicondisable"
+            android:clickable="false" />
+
+        <Button
+            android:id="@+id/btnGPS"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@+id/btnCall"
+            android:background="@drawable/telenotemainpagegpsicondisable"
+            android:clickable="false" />
+
+        
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:background="@drawable/telenotemainpagemiddlebanner"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout2"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/telenotelistviewbackground2" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/LayoutStatus" >
+
+                <ImageView
+                    android:id="@+id/imgMPGgigure"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/telenotemainpagefaceimage" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txtNameInd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NAME"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtNumberInd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0424221234"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LayoutStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtDateInd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/txtTimeInd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/imgCallStatusInd"
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/telenoteincomingcallicon" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lsvIndPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout3"
+        android:choiceMode="singleChoice" >
+
+    </ListView>
+
+</RelativeLayout>
